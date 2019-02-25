@@ -1,0 +1,47 @@
+public class Principal{
+	public static int sumaNPrimeros(int n)
+	{
+		/**tambien se podria hacer de la siguiente forma recursiva.
+		       if(n==1) return 1;
+			else return n + sumaNPrimeros(n-1);(duende)*/		
+		
+		
+		int suma=0, i;
+	        for(i=1;i<=5;i++){
+		suma=i+suma;
+		}
+
+		return suma;
+	
+	}
+
+	public static double suma(Arraylist<Double> lista){
+
+		int suma=0;
+		for (int i=0; i< lista.size(); i++){
+		suma+=lista.get(i);
+		}
+		return suma;
+	}
+
+	/** Para realizarlo de forma recursiva 
+	 *
+	 * public static double suma(Arraylist<Double> lista)
+	 * */
+
+	public static void main (String[] args){
+		System.out.println("La suma de los 5 primeros numeros es" + sumaNPrimeros(5));
+	}
+
+
+	public static void main (String[] args){
+
+		Arraylist<Double> lista = new Arraylist<>();
+		list.add(2,0);
+		list.add(5,0);
+		list.add(2.0);
+
+		System.out.println(suma(lista ));
+	
+	}
+}
